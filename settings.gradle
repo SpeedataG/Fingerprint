@@ -1,1 +1,1 @@
-include  ':power', ':tcs1g'
+include  ':power', ':tcs1g', ':s21'

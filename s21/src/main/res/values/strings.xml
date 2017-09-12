@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">S21</string>
+    <string name="version">Version</string>
+    <string name="find_device">Find Device</string>
+    <string name="init">Init</string>
+    <string name="uninit">Uninit</string>
+    <string name="sensitivity">Sensitivity</string>
+    <string name="security_level">Security Level</string>
+    <string name="timeout">TimeOut</string>
+    <string name="fast_mode">Fast Mode</string>
+    <string name="suprema">SUPREMA</string>
+    <string name="iso">ISO</string>
+    <string name="ansi">ANSI</string>
+    <string name="capture_single">Capture Single</string>
+    <string name="start_capturing">Start Capturing</string>
+    <string name="abort_capturing">Abort Capturing</string>
+    <string name="Crop_Scan_Mode">Crop Mode</string>
+    <string name="enroll">Enroll</string>
+    <string name="matching">Matching</string>
+    <string name="auto_rotate">Auto Rotate</string>
+    <string name="insert_name">Insert Name</string>
+    <string name="delete_all_user">Delete All User</string>
+    <string name="savebmpfile">SaveBmpFile</string>
+    <string name="savewsqfile">SaveWSQFile</string>
+    <string name="message">Message</string>
+    <string name="SaveTemplate">Save Template</string>
+    <string name="title_activity_activity_config">ActivityConfig</string>
+
+</resources>

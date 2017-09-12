@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Fingerprint.iml" filepath="$PROJECT_DIR$/Fingerprint.iml" />
       <module fileurl="file://$PROJECT_DIR$/power/power.iml" filepath="$PROJECT_DIR$/power/power.iml" />
+      <module fileurl="file://$PROJECT_DIR$/s21/s21.iml" filepath="$PROJECT_DIR$/s21/s21.iml" />
       <module fileurl="file://$PROJECT_DIR$/tcs1g/tcs1g.iml" filepath="$PROJECT_DIR$/tcs1g/tcs1g.iml" />
     </modules>
   </component>
