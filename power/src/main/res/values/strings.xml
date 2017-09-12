@@ -1,0 +1,5 @@
+<resources>
+    <string name="power_on">上电</string>
+    <string name="power_off">下电</string>
+    <string name="go">开始使用</string>
+</resources>
