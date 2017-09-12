@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        	  android:id="@+id/selected_device"
+        	  android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/serial_number"
+    		  android:padding="10dp" />
+
+    <Button
+        android:id="@+id/get_reader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_reader" />
+
+    <Button
+        android:id="@+id/get_capabilities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_capabilities" />
+
+    <Button
+        android:id="@+id/capture_fingerprint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/capture_fingerprint" />
+
+    <Button
+        android:id="@+id/stream_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stream_image" />
+
+    <Button
+        android:id="@+id/enrollment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enrollment" />
+
+    <Button
+        android:id="@+id/verification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verification" />
+
+    <Button
+        android:id="@+id/identification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/identification" />
+
+</LinearLayout>
+</ScrollView>

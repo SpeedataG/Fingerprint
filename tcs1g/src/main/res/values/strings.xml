@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TCS1G</string>
+    <string name="serial_number">Serial Number: (No Reader Selected)</string>
+    <string name="get_reader">Get Reader</string>
+    <string name="get_capabilities">Get Capabilities</string>
+    <string name="capture_fingerprint">Capture</string>
+    <string name="stream_image">Stream Image</string>
+    <string name="enrollment">Enrollment</string>
+    <string name="verification">Verification</string>
+    <string name="identification">Identification</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="back">Back</string>
+    <string name="select">Select</string>
+</resources>

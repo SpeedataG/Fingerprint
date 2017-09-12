@@ -44,6 +44,8 @@ public class PowerUtils {
             } else {
                 mFingerGpio.powerOnDeviceOut(getGpio(mFinger));
             }
+        } else {
+            throw new IOException("配置文件不存在");
         }
     }
 
@@ -59,6 +61,8 @@ public class PowerUtils {
             } else {
                 mFingerGpio.powerOffDeviceOut(getGpio(mFinger));
             }
+        } else {
+            throw new IOException("配置文件不存在");
         }
     }
 
