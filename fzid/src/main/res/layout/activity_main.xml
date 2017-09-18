@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivImageViewer"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="false"
+            android:background="#ffffffff"
+            android:contentDescription="@string/TEXT_IMAGE"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnOpenDevice"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/TEXT_OPEN_DEVICE"
+                android:textAllCaps="false"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btnCloseDevice"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/TEXT_CLOSE_DEVICE"
+                android:textAllCaps="false"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btnGetImage"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/TEXT_GET_IMAGE"
+                android:textAllCaps="false"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btnOnVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/TEXT_VIDEO"
+                android:textAllCaps="false"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btnGetImageQuality"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/TEXT_GET_QUALITY"
+                android:textAllCaps="false"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/firstTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/FIRST_TEMPLATE"/>
+
+        <RadioButton
+            android:id="@+id/secondTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SECOND_TEMPLATE"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10sp">
+
+        <TextView
+            android:id="@+id/tvTemp1"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="#ffdddddd"
+            android:singleLine="false"
+            android:text="@string/TEXT_CHAR"
+            android:textColor="#ff000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnCreateTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/TEXT_CREATE_TEMP"
+                android:textAllCaps="false"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btnMatchTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/TEXT_MATCH_TEMP"
+                android:textAllCaps="false"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Fzid</string>
+    <string name="hello">Welcome to Finger SDK</string>
+    <string name="TEXT_OPEN_DEVICE">OpenDevice</string>
+    <string name="TEXT_CLOSE_DEVICE">CloseDevice</string>
+    <string name="TEXT_GET_IMAGE">GetImage</string>
+    <string name="TEXT_GET_QUALITY">GetImageQuality</string>
+    <string name="TEXT_CREATE_TEMP">CreateTemplate</string>
+    <string name="TEXT_MATCH_TEMP">CompareTemplates</string>
+    <string name="TEXT_CHAR">Template</string>
+    <string name="TEXT_IMAGE">Image</string>
+    <string name="TEXT_VIDEO">Video</string>
+    <string name="FIRST_TEMPLATE">Template1</string>
+    <string name="SECOND_TEMPLATE">Template2</string>
+</resources>
