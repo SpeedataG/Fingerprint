@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- 全屏幕拉伸-->
+    <style name="layout_full">
+
+        <item name="android:layout_width">fill_parent</item>
+
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <!-- 固定自身大小-->
+    <style name="layout_wrap">
+
+        <item name="android:layout_width">wrap_content</item>
+
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 横向分布-->
+    <style
+        name="layout_horizontal"
+        parent="layout_full">
+
+        <item name="android:layout_width">0px</item>
+    </style>
+
+    <!-- 纵向分布-->
+    <style
+        name="layout_vertical"
+        parent="layout_full">
+
+        <item name="android:layout_height">0px</item>
+    </style>
+</resources>
