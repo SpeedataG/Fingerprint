@@ -154,7 +154,8 @@ class FingerGpio {
      * @param gpio gpio
      */
     private void powerOnDeviceOut(int gpio) throws IOException {
-        mControlFile.write(gpio + "on");   //上电IO口调整
+        //上电IO口调整
+        mControlFile.write(gpio + "on");
         mControlFile.flush();
     }
 
@@ -164,7 +165,8 @@ class FingerGpio {
      * @param gpio gpio
      */
     private void powerOffDeviceOut(int gpio) throws IOException {
-        mControlFile.write(gpio + "off");   //下电IO口调整
+        //下电IO口调整
+        mControlFile.write(gpio + "off");
         mControlFile.flush();
     }
 }
