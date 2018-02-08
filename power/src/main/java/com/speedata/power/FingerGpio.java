@@ -138,11 +138,13 @@ class FingerGpio {
      * @param gpio gpio
      */
     private void powerOffDevice(int gpio) throws IOException {
-        mControlFile.write("-wmode" + gpio + " 0");   //将GPIO99设置为GPIO模式
+        mControlFile.write("-wmode" + gpio + " 0");
         mControlFile.flush();
-        mControlFile.write("-wdir" + gpio + " 1");        //将GPIO99设置为输出模式
+        //将GPIO99设置为输出模式
+        mControlFile.write("-wdir" + gpio + " 1");
         mControlFile.flush();
-        mControlFile.write("-wdout" + gpio + " 0");   //下电IO口调整
+        //下电IO口调整
+        mControlFile.write("-wdout" + gpio + " 0");
         mControlFile.flush();
     }
 
