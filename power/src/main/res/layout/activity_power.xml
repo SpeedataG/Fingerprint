@@ -18,6 +18,14 @@
         />
 
     <Button
+        android:id="@+id/btn_power_on_params"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/power_on_params"
+        />
+
+    <Button
         android:id="@+id/btn_go"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -30,5 +38,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="@string/power_off"
+        />
+
+    <Button
+        android:id="@+id/btn_power_off_params"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/power_off_params"
         />
 </LinearLayout>

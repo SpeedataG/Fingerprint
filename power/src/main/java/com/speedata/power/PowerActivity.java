@@ -10,8 +10,8 @@ import java.io.IOException;
 
 /**
  * @author :Reginer in  2017/9/12 10:03.
- *         联系方式:QQ:282921012
- *         功能描述:上下电
+ * 联系方式:QQ:282921012
+ * 功能描述:上下电
  */
 public class PowerActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = PowerActivity.class.getSimpleName();
@@ -21,8 +21,10 @@ public class PowerActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_power);
         findViewById(R.id.btn_power_on).setOnClickListener(this);
+        findViewById(R.id.btn_power_on_params).setOnClickListener(this);
         findViewById(R.id.btn_go).setOnClickListener(this);
         findViewById(R.id.btn_power_off).setOnClickListener(this);
+        findViewById(R.id.btn_power_off_params).setOnClickListener(this);
     }
 
 
@@ -31,12 +33,45 @@ public class PowerActivity extends AppCompatActivity implements View.OnClickList
         if (v.getId() == R.id.btn_power_on) {
             powerOn();
         }
+        if (v.getId() == R.id.btn_power_on_params) {
+            powerOnParams();
+        }
         if (v.getId() == R.id.btn_go) {
             go();
         }
         if (v.getId() == R.id.btn_power_off) {
             powerOff();
         }
+        if (v.getId() == R.id.btn_power_off_params) {
+            powerOffParams();
+        }
+    }
+
+    /**
+     * 指定参数下电
+     */
+    private void powerOffParams() {
+        try {
+            FingerGpio power = new FingerGpio("sys/class/misc/mtgpio/pin");
+            //拉低gpio64和93
+            power.powerOffDevice(64, 93);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 指定参数上电
+     */
+    private void powerOnParams() {
+        try {
+            FingerGpio power = new FingerGpio("sys/class/misc/mtgpio/pin");
+            //拉高gpio93和64
+            power.powerOnDevice(93, 64);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     /**

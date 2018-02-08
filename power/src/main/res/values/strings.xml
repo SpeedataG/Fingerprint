@@ -1,5 +1,7 @@
 <resources>
-    <string name="power_on">上电</string>
-    <string name="power_off">下电</string>
+    <string name="power_on">配置文件上电</string>
+    <string name="power_off">配置文件下电</string>
+    <string name="power_on_params">指定参数上电</string>
+    <string name="power_off_params">指定参数下电</string>
     <string name="go">开始使用</string>
 </resources>
