@@ -27,11 +27,12 @@ import java.io.IOException;
  * ━━━━━━神兽出没━━━━━━
  *
  * @author :Reginer in  2017/7/6 2:55.
- *         联系方式:QQ:282921012
- *         功能描述:gpio工具类
+ * 联系方式:QQ:282921012
+ * 功能描述:gpio工具类
  */
 class FingerGpio {
     private BufferedWriter mControlFile;
+
     /**
      * 初始化.
      *
@@ -120,11 +121,14 @@ class FingerGpio {
      * @param gpio gpio
      */
     private void powerOnDevice(int gpio) throws IOException {
-        mControlFile.write("-wmode" + gpio + " 0");   //将GPIO99设置为GPIO模式
+        //将GPIO99设置为GPIO模式
+        mControlFile.write("-wmode" + gpio + " 0");
         mControlFile.flush();
-        mControlFile.write("-wdir" + gpio + " 1");        //将GPIO99设置为输出模式
+        //将GPIO99设置为输出模式
+        mControlFile.write("-wdir" + gpio + " 1");
         mControlFile.flush();
-        mControlFile.write("-wdout" + gpio + " 1");   //上电IO口调整
+        //上电IO口调整
+        mControlFile.write("-wdout" + gpio + " 1");
         mControlFile.flush();
     }
 
