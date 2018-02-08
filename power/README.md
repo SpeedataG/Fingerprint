@@ -29,3 +29,16 @@
       exclude group: 'com.alibaba'
   }
 ```
+
+如果不想使用配置文件的话，可以这样：
+```
+//指定上电路径为sys/class/misc/mtgpio/pin
+FingerGpio power = new FingerGpio("sys/class/misc/mtgpio/pin");
+//拉高gpio93和64
+power.powerOnDevice(93,64);
+//拉低gpio64和93
+power.powerOffDevice(64,93);
+```
+
+
+
