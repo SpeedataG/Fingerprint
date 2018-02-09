@@ -54,7 +54,7 @@ public class PowerActivity extends AppCompatActivity implements View.OnClickList
         try {
             FingerGpio power = new FingerGpio("sys/class/misc/mtgpio/pin");
             //拉低gpio64和93
-            power.powerOffDevice(64, 93);
+            power.powerOffDevice(63, 128);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -65,9 +65,11 @@ public class PowerActivity extends AppCompatActivity implements View.OnClickList
      */
     private void powerOnParams() {
         try {
+            Log.d(TAG, "准备上电: " + System.currentTimeMillis());
             FingerGpio power = new FingerGpio("sys/class/misc/mtgpio/pin");
             //拉高gpio93和64
-            power.powerOnDevice(93, 64);
+            power.powerOnDevice(63, 128);
+            Log.d(TAG, "上电完成: " + System.currentTimeMillis());
         } catch (IOException e) {
             e.printStackTrace();
         }
