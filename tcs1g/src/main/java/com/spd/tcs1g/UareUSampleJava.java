@@ -189,7 +189,7 @@
                 setButtonsEnabled(true);
                 setButtonsEnabled_Capture(cap.can_capture);
                 setButtonsEnabled_Stream(cap.can_stream);
-                //			m_reader.Close();
+                m_reader.Close();
             } catch (UareUException e1) {
                 displayReaderNotFound();
             }
