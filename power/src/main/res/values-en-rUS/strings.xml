@@ -1,0 +1,7 @@
+<resources>
+    <string name="power_on">File power on</string>
+    <string name="power_off">File power off</string>
+    <string name="power_on_params">Params power on</string>
+    <string name="power_off_params">Params power off</string>
+    <string name="go">Start fingerprint</string>
+</resources>
