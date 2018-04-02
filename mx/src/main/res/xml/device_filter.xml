@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 如果你不确定你需要检测的设备vendor-id和product-id，
+           可以所有的参数都为空，将获得所有已连接的USB设备。否则请对应上相应参数。 
+    	   可以在Windows上查看USB设备的VID和PID，
+    	  需要注意的是，在Windows上VID和PID都是十六进制数，需要转换为10进制。 
+    	  <usb-device vendor-id="8251" product-id="257" /> -->
+    	 <usb-device /> 
+    <!--	<usb-device />  -->
+</resources>

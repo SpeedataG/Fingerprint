@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Fingerprint.iml" filepath="$PROJECT_DIR$/Fingerprint.iml" />
       <module fileurl="file://$PROJECT_DIR$/fzid/fzid.iml" filepath="$PROJECT_DIR$/fzid/fzid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mx/mx.iml" filepath="$PROJECT_DIR$/mx/mx.iml" />
       <module fileurl="file://$PROJECT_DIR$/power/power.iml" filepath="$PROJECT_DIR$/power/power.iml" />
       <module fileurl="file://$PROJECT_DIR$/s21/s21.iml" filepath="$PROJECT_DIR$/s21/s21.iml" />
       <module fileurl="file://$PROJECT_DIR$/tcs1/tcs1.iml" filepath="$PROJECT_DIR$/tcs1/tcs1.iml" />

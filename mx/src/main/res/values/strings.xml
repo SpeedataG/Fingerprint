@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">中正指纹仪</string>
+    <string name="title_name">中正指纹仪示例 V1.0.0.1</string>
+
+    <!--主界面   -->
+    <string name="text_result">结果</string>
+    <string name="btn_getImage">采集图像</string>
+    <string name="btn_fingerEnroll">指纹注册</string>
+    <string name="btn_fingerMatch">指纹比对</string>
+    <string name="btn_getDriverVersion">驱动版本</string>
+    <string name="btn_getDevVersion">设备版本</string>
+    <string name="btn_getAlgVersion">算法版本</string>
+
+    <!-- 提示信息 -->
+    <string name="str_prompt">提示信息</string>
+    <string name="str_success">成功</string>
+    <string name="str_failed">失败</string>
+    <string name="str_promptPressFinger">请按手指</string>
+    <string name="str_promptPressThreeFinger">请按3次手指</string>
+    <string name="str_promptPress2ndFinger">请按第2次手指</string>
+    <string name="str_promptPress3rdFinger">请按第3次手指</string>
+    <string name="str_time">耗时</string>
+</resources>

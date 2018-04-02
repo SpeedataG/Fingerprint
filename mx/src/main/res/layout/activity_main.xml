@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/title_name" />
+    </LinearLayout>
+
+    <!-- 扫描结果 -->
+    <TextView
+        android:id="@+id/text_scan_result"
+        style="@style/normalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_result" />
+
+    <ScrollView
+        android:id="@+id/scrollView_show_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="200px"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#0f000000"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edit_show_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="13dip"
+                android:layout_marginRight="13dip"
+                android:background="@null"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="false"
+                android:gravity="top"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="16sp" >
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+    <!-- 功能区 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="0dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="10dip"
+            android:padding="10dip" >
+
+            <ImageView
+                android:id="@+id/image_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/finger152_200"
+                android:contentDescription="@string/btn_getImage" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="0dip"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_getImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_getImage" 
+                android:background="@drawable/button"
+                android:onClick="OnClickGetImage"/>
+                   <Button
+                android:id="@+id/btn_fingerEnroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_fingerEnroll" 
+                android:background="@drawable/button"
+                 android:onClick="OnClickFingerEnroll"/>
+
+            <Button
+                android:id="@+id/btn_fingerMatch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_fingerMatch" 
+ 				android:background="@drawable/button"
+ 				 android:onClick="OnClickFingerMatch"/>
+            <Button
+                android:id="@+id/btn_getDevVersion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_getDevVersion"  
+                android:background="@drawable/button"
+                android:onClick="OnClickGetDevVersion"/>
+            
+            <Button
+                android:id="@+id/btn_getDriverVersion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_getDriverVersion" 
+				android:background="@drawable/button"
+				 android:onClick="OnClickGetDriverVersion"/>
+	
+            <Button
+                android:id="@+id/btn_getAlgVersion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_getAlgVersion"
+                android:background="@drawable/button"
+                android:onClick="OnClickGetAlgVersion"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>
