@@ -8,25 +8,25 @@
     package com.spd.tcs1g;
 
     import android.app.Activity;
-    import android.app.AlertDialog;
-    import android.app.PendingIntent;
-    import android.content.BroadcastReceiver;
-    import android.content.Context;
-    import android.content.DialogInterface;
-    import android.content.Intent;
-    import android.content.IntentFilter;
-    import android.hardware.usb.UsbDevice;
-    import android.hardware.usb.UsbManager;
-    import android.os.Bundle;
-    import android.view.View;
-    import android.widget.Button;
-    import android.widget.TextView;
+import android.app.AlertDialog;
+import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.hardware.usb.UsbDevice;
+import android.hardware.usb.UsbManager;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
-    import com.digitalpersona.uareu.Reader;
-    import com.digitalpersona.uareu.Reader.Priority;
-    import com.digitalpersona.uareu.UareUException;
-    import com.digitalpersona.uareu.dpfpddusbhost.DPFPDDUsbException;
-    import com.digitalpersona.uareu.dpfpddusbhost.DPFPDDUsbHost;
+import com.digitalpersona.uareu.Reader;
+import com.digitalpersona.uareu.Reader.Priority;
+import com.digitalpersona.uareu.UareUException;
+import com.digitalpersona.uareu.dpfpddusbhost.DPFPDDUsbException;
+import com.digitalpersona.uareu.dpfpddusbhost.DPFPDDUsbHost;
 
     public class UareUSampleJava extends Activity {
         private final int GENERAL_ACTIVITY_RESULT = 1;
@@ -204,7 +204,6 @@
 
             Globals.ClearLastBitmap();
             m_deviceName = (String) data.getExtras().get("device_name");
-
             switch (requestCode) {
                 case GENERAL_ACTIVITY_RESULT:
 
@@ -238,6 +237,9 @@
                     }
 
                     break;
+
+                    default:
+                        break;
             }
         }
 
@@ -253,7 +255,11 @@
                     });
 
             AlertDialog alertDialog = alertDialogBuilder.create();
-            alertDialog.show();
+            try{
+                alertDialog.show();
+            } catch (Exception e){
+                e.printStackTrace();
+            }
         }
 
         private final BroadcastReceiver mUsbReceiver = new BroadcastReceiver() {

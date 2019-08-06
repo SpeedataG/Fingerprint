@@ -1,9 +1,13 @@
 package com.speedata.power;
 
+import android.support.annotation.StringDef;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
 /**
  * ----------Dragon be here!----------/
@@ -38,7 +42,7 @@ class FingerGpio {
      *
      * @param path gpio路径
      */
-    FingerGpio(String path) throws IOException {
+    FingerGpio(@PowerType String path) throws IOException {
         File gpioFile = new File(path);
         mControlFile = new BufferedWriter(new FileWriter(gpioFile, false));
     }
@@ -168,5 +172,19 @@ class FingerGpio {
         //下电IO口调整
         mControlFile.write(gpio + "off");
         mControlFile.flush();
+    }
+
+    /**
+     * 主板上电路径
+     */
+    public static final String MAIN = "sys/class/misc/mtgpio/pin";
+    /**
+     * 外部扩展上电路径
+     */
+    public static final String OUT = "sys/class/misc/aw9523/gpio";
+
+    @StringDef({MAIN, OUT})
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface PowerType {
     }
 }

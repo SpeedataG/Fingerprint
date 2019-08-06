@@ -33,7 +33,7 @@ import java.io.InputStreamReader;
  *         功能描述:文件操作
  */
 public class FileUtils {
-    private static final String FILE_PATH = "/system/usr/config.cfg";
+    private static final String FILE_PATH = "/storage/emulated/0/speedata.config";
 
     /**
      * 读取文件内容.
